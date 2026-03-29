@@ -9,6 +9,13 @@ Mercado Liebre es una aplicación web de comercio electronico, desarrollada como
 - Vista de formulario de registro y login 
 - Diseño responsive para móvil, tablet y escritorio
 
+## Tecnologías
+- Node.js
+- Express
+- EJS
+- HTML5 / CSS3
+- JavaScript
+
 ## Instalación
 1. Clona el repositorio:
 `[git clone https://github.com/Marie-ma21/mercado-liebre.git](https://github.com/Marie-ma21/MercadoLiebre.git)`
