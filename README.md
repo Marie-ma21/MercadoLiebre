@@ -11,8 +11,9 @@ Mercado Liebre es una aplicación web de comercio electronico, desarrollada como
 
 ## Instalación
 1. Clona el repositorio:
-git clone https://github.com/Marie-ma21/mercado-liebre.git
-
+´´
+[git clone https://github.com/Marie-ma21/mercado-liebre.git](https://github.com/Marie-ma21/MercadoLiebre.git)
+´´
 2. Instala dependencias:
 npm install
 
