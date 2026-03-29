@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <%- include('Components/header') %>
+        <img class="banner" src="/public/img/banner.png" alt="">
+  <!-----Productos--( footer>section>div*3>li+h4+p)--->
+  
+  <main>
+    <div class="form-card">
+        <h2>Iniciar sesión</h2>
+    <form action="/login" method="post">
+        <input class="boton" type="text" placeholder="usuario" minlength="1" maxlength="8" required>
+        <input class="boton" type="password" placeholder="contraseña" required>
+        <button class="botones">Enviar</button>
+
+    </form>
+ </div>
+
+  </main>
+ <%- include('Components/footer') %>
+</body>
+</html>
