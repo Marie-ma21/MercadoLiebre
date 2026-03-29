@@ -20,7 +20,7 @@ Mercado Liebre es una aplicación web de comercio electronico, desarrollada como
 `node app.js`
 
 4. Abre en el navegador:
-http://localhost:3000
+` http://localhost:3000 `
 
 ## Nota
 Este proyecto es solo con fines educativos y de práctica. Imagenes, logos o marcas se usan solo como referencia visual
