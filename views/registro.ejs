@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <%- include('Components/header') %>
+
+    <main>
+         <div class="form-card">
+        <h2>Crea tu cuenta</h2>
+        <form action="/registrar" method="post">
+            <input class="boton" type="text" placeholder="Nombre" required>
+            <input class="boton" type="text" placeholder="Apellido" required>
+            <label>  ㅤ  </label>
+             <label class="label-izq">Fecha de nacimiento</label>
+                <input class="boton" type="date" required>
+            <input class="boton" type="email" placeholder="Correo electrónico" required>
+            <input class="boton" type="text" placeholder="Usuario" minlength="1" maxlength="8" required>
+             <label>  ㅤ  </label>
+             <label class="label-izq"><i class="fas fa-user-circle"></i> Foto de perfil</label>
+            
+            <input class="label-izq" type="file" accept="image/*" required>
+
+        
+
+            <input class="boton" type="password" placeholder="Contraseña" required>
+            <input class="boton" type="password" placeholder="Confirmar contraseña" required>
+
+           
+            <button class="botones">Crear cuenta</button>
+             <button class="botones" type="reset">Limpiar</button>
+        </form>
+           </div>
+    </main>
+
+    <%- include('Components/footer') %>
+</body>
+</html>

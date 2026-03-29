@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <%- include('Components/header') %>
+        <img class="banner" src="/public/img/banner.png" alt="">
+  <!-----Productos--( footer>section>div*3>li+h4+p)--->
+
+  <main>
+     <section>
+        <h3>Hogar</h3>
+        <div class="vista">
+            <% hogar.forEach(producto => { %>
+                <%- include('Components/product-card', { producto }) %>
+            <% }) %>
+        </div>
+    </section>
+    <section>
+        <h3>Belleza</h3>
+        <div class="vista">
+            <% belleza.forEach(producto => { %>
+                <%- include('Components/product-card', { producto }) %>
+            <% }) %>
+        </div>
+    </section>
+    <section>
+        <h3>Calzado</h3>
+        <div class="vista">
+            <% calzado.forEach(producto => { %>
+                <%- include('Components/product-card', { producto }) %>
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<script>
+    document.querySelectorAll('.tarjeta').forEach(tarjeta => {
+        tarjeta.addEventListener('click', function() {
+            this.classList.toggle('activa');
+        });
+    });
+</script>
+
+<%- include('Components/footer') %>
+</body>
+</html>

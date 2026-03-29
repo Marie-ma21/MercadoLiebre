@@ -1,0 +1,260 @@
+/* ====== BASE ====== */
+body{
+font:12px "Roboto",sans-serif;
+background:#F5F4F3
+}
+
+header,a,li,header>ul>li>a>i,.compra,
+.fa-address-card,.fa-sign-in-alt,.fa-shopping-basket,.fa-hand-holding-usd{
+background:#EAC926
+}
+
+header{width:auto}
+ul{list-style:none;margin:0;padding:0}
+a{text-decoration:none;color:#000;text-align:left}
+main{width:90%;margin:auto}
+h3{font-size:24px}
+img{width:100%;height:auto;background:transparent}
+
+.compra,footer{text-align:center}
+footer{background:#fff}
+
+.caja{border-top:1px solid #ebebeb;background:#fff}
+.tarjeta{margin-bottom:10px}
+
+.buscador,.busqueda,.lupa,.xyz{background:#fff;border-radius:5px}
+
+.burger-menu{
+background:#1259c3;
+color:#fff;
+width:40px;
+height:40px;
+border-radius:8px;
+padding:5px 0;
+margin:auto;
+text-align:center
+}
+
+.fa-bars{font-size:30px;color:#fff}
+
+.Precios{font-size:18px}
+.Descuentos,.Descripciones{font-size:16px}
+.Descuentos{color:#39b54a}
+
+footer>div>i{color:#1259c3;font-size:2em}
+footer>div{margin-bottom:10px}
+
+.flex{display:flex;flex-wrap:wrap}
+
+.Precios,.Descuentos{display:flex}
+
+.carro{
+border:1px solid green;
+border-radius:100%;
+width:40px;
+height:40px;
+position:relative;
+left:80%;
+top:-20px;
+z-index:1;
+transition:1s
+}
+
+.carro:hover{transform:rotate(360deg)}
+
+.fa-truck{
+color:green;
+font-size:25px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%)
+}
+
+form{
+display:flex;
+flex-direction:column;
+width:90%;
+margin:5%;
+align-items:center
+}
+
+.botones,.boton{
+width:100%;
+height:30px;
+border-radius:4px;
+border:1px solid gray;
+margin-top:5%
+}
+
+.botones{background:#EAC926}
+.boton{background:#fff}
+
+.botones:hover{background:#0022AA}
+.icofuter{font-size:25px}
+.icofuter:hover{color:green}
+
+/* ====== MOBILE ====== */
+@media (max-width:575px){
+
+.Descripciones,nav{display:none}
+
+.cabecera{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around
+}
+
+.buscador{width:40vw;height:20px}
+.imgcabecera{width:40vw}
+
+.fa-search,.fa-hand-holding-usd{font-size:15px}
+
+.tarjeta:hover{box-shadow:0 0 10px rgb(100,100,100)}
+
+.w-header{width:30%}
+}
+
+/* ====== TABLET ====== */
+@media (min-width:576px) and (max-width:991px){
+
+.burger-menu{display:none}
+
+nav{display:flex;justify-content:space-around}
+ul{display:flex}
+
+.vista,.cabecera{
+display:flex;
+flex-wrap:wrap;
+justify-content:center
+}
+
+.cabecera{justify-content:space-around}
+
+footer>section{
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:baseline
+}
+
+.imagen{width:40vw}
+.buscador{width:20vw;height:25px}
+.imgcabecera{width:30vw}
+
+.fa-address-card,.fa-sign-in-alt,.fa-shopping-basket,
+.fa-search,.fa-hand-holding-usd{font-size:15px}
+
+.fa-credit-card,.fa-gift,.fa-user-shield{font-size:30px}
+
+.tarjeta{margin:5px}
+
+.tarjeta:hover{
+box-shadow:0 0 10px rgb(100,100,100);
+transform:scale(1.2);
+position:relative;
+z-index:1
+}
+
+.Descripciones{color:#fff}
+.Descripciones:hover{color:#000}
+}
+
+/* ====== DESKTOP ====== */
+@media (min-width:992px){
+
+.burger-menu{display:none}
+
+nav{display:flex;justify-content:space-around}
+ul{display:flex}
+ul li { margin: 0 15px; }
+
+.vista,.cabecera{
+display:flex;
+flex-wrap:wrap;
+justify-content:center
+}
+
+.cabecera{justify-content:space-around;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.xyz {
+    flex-direction: row;
+    width: auto;
+    margin: 0;
+}
+
+
+footer>section{
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:baseline
+}
+
+.imagen{width:20vw}
+.buscador{width:20vw;height:25px}
+.imgcabecera{width:30vw}
+
+.fa-credit-card,.fa-gift,.fa-user-shield{font-size:30px}
+
+.tarjeta{margin:10px 15px; width:20vw}
+.caja{padding:8px}  
+
+.flex{
+display:flex;
+justify-content:space-between;           
+padding:5px 8px;
+}
+.flex p:last-child {
+    color: #3aba4b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tarjeta:hover{
+box-shadow:0 0 10px rgb(100,100,100);
+transform:scale(1.2);
+z-index:1
+}
+
+
+.Descripciones{color:#fff}
+.Descripciones:hover{color:#000}
+
+.form-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    padding: 30px;
+    width: 350px;
+    margin: 40px auto;
+} 
+
+.label-izq {
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+}
+.detalle {
+    display: none;
+    background: #EAC926;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #333;
+}
+
+.tarjeta.activa .detalle {
+    display: block;
+}
+
+
+
+}
